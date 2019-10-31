@@ -54,14 +54,23 @@ namespace KegMasterAppService
         protected override void Seed(KegMasterAppContext context)
         {
             KegItem KegSeed = new KegItem { Id = Guid.NewGuid().ToString(),
-                TapId=0,
-                Name = "Best Keg",
-                Description = "Best Keg Ever",
-                DateAvailable = new DateTime(),
-                DateKegged = new DateTime(),
-                Quantity = 0,
-                Dispense = false };
-                    
+                                            Alerts = "",
+                                            Name = "My Keg",
+                                            Description = "Best Keg Ever",
+                                            DateKegged = new DateTime(1516, 04, 23),
+                                            DateAvail = new DateTime(1516, 04, 23),
+                                            PourEn = true,
+                                            PourNotification = false,
+                                            PourQtyGlass = 0.0f,
+                                            PourQtySample = 0.0f,
+                                            PressureCrnt = 0.0f,
+                                            PressureDsrd = 0.0f,
+                                            PressureDwellTime = 0.0f,
+                                            PressureEn = true,
+                                            QtyAvailable = 0.0f,
+                                            QtyReserve = 0.0f
+                                            };
+            
             context.Set<KegItem>().Add(KegSeed);
 
             base.Seed(context);

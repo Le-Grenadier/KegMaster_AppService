@@ -16,7 +16,7 @@ namespace KegMasterAppService.Models
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
 
-        private const string connectionStringName = "Name=KegMasterDB";
+        private const string connectionStringName = "Name=KegMasterConnectionString";
 
         public KegMasterAppContext() : base(connectionStringName)
         {
