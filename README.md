@@ -1,0 +1,1 @@
+Written in C#, using the .NET framework this simple interface enables the Xamarin application to efficiently and safely query SQL data. This repository is part of a larger 'Keg Master' system, which integrates various sensors and control devices with the Azure Sphere and a Microchip PIC18f14K50 based PCB I developed. See my other repositories for more information.
